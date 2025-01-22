@@ -220,6 +220,10 @@ footer{
     margin-bottom: 20px; /* Razmak između projekata */
 }
 
+.project-description-label {
+    padding-bottom: 10px;
+}
+
 .project img {
     width: 100%;
     height: auto;
@@ -231,6 +235,25 @@ footer{
 
 .project p {
     font-size: 14px;
+}
+
+.input-group {
+    width: 100%; 
+    flex-direction: column;
+}
+
+.input-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    resize: vertical; 
+}
+
+.form-action {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
 }
 
 /*media queris*/

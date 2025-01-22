@@ -68,20 +68,20 @@
                 <form action="#" method="POST" class="quote-form">
                     <!-- Lični Podaci -->
                     <fieldset>
-                        <legend>Lični Podaci</legend>
+                        <legend>Podaci</legend>
                         <div class="input-group">
-                            <label for="full-name">Puno Ime</label>
+                            <label for="full-name">Ime</label>
                             <input type="text" id="full-name" name="full-name" placeholder="Vaše puno ime" required>
                         </div>
                         <div class="input-group">
-                            <label for="email">Email Adresa</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="Vaša email adresa" required>
                         </div>
                     </fieldset>
 
                     <!-- Izbor Usluga -->
                     <fieldset>
-                        <legend>Izaberite Usluge Koje Vam Trebaju</legend>
+                        <legend>Izaberite odgovarajuće usluge</legend>
                         <div class="input-group">
                             <input type="checkbox" id="design" name="services[]" value="Web Dizajn">
                             <label for="design">Web Dizajn</label>
@@ -98,13 +98,13 @@
 
                     <!-- Detalji Projekta -->
                     <fieldset>
-                        <legend>Detalji Projekta</legend>
+                        <legend>Detalji projekta</legend>
                         <div class="input-group">
-                            <label for="project-description">Opis Vašeg Projekta</label>
-                            <textarea id="project-description" name="project-description" placeholder="Opišite detaljno vaš projekat" required></textarea>
+                            <label for="project-description">Opis vašeg projekta:</label><br>
+                            <textarea id="project-description" name="project-description" placeholder="Opišite detaljno vaš projekat" rows="5" required></textarea>
                         </div>
                         <div class="input-group">
-                            <label for="project-duration">Preferirani Rok</label>
+                            <label for="project-duration">Rok izrade</label>
                             <select id="project-duration" name="project-duration" required>
                                 <option value="1mesec">1 Mesec</option>
                                 <option value="3meseca">3 Meseca</option>
@@ -117,7 +117,7 @@
 
                     <!-- Način Plačanja -->
                     <fieldset>
-                        <legend>Način Plačanja</legend>
+                        <legend>Način plaćanja</legend>
                         <div class="input-group">
                             <input type="radio" id="card" name="payment-method" value="Kartica" required>
                             <label for="card">Kreditna/Debitna Kartica</label>
