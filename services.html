@@ -63,60 +63,82 @@
             </article>
 
             <aside id="sidebar">
-                <div class="dark">
-                <h3>Podaci za potrebni za naše usluge</h3>
-                    <form class="quote">
-                        <div>
-                            <label>Ime</label><br>
-                            <input type="text" placeholder="Ime">
+            <div class="dark quote-form">
+                <h3>Zatražite Prilagođenu Ponudu</h3>
+                <form action="#" method="POST" class="quote-form">
+                    <!-- Lični Podaci -->
+                    <fieldset>
+                        <legend>Lični Podaci</legend>
+                        <div class="input-group">
+                            <label for="full-name">Puno Ime</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Vaše puno ime" required>
                         </div>
-                        <div>
-                            <label>Email</label><br>
-                            <input type="text" placeholder="Email Adresa">
+                        <div class="input-group">
+                            <label for="email">Email Adresa</label>
+                            <input type="email" id="email" name="email" placeholder="Vaša email adresa" required>
                         </div>
-                        <div>
-                            <label>Vaš zahtev</label><br>
-                          <textarea placeholder="Unesite detaljan opis zahteva"></textarea>
-                        </div>
+                    </fieldset>
 
-                        <div>
-                            <label>Koje usluge želite</label>
-                            <form>
-                                <input type="checkbox" id="cb1" value="Bike">
-                                <label for="cb1">Web Site Design</label><br>
-                                <input type="checkbox" id="cb2"  value="Car">
-                                <label for="cb2"> Web Site Maintenace</label><br>
-                                <input type="checkbox" id="cb3" value="Boat">
-                                <label for="cb3"> Web Site Hosting</label>
-                              </form>
+                    <!-- Izbor Usluga -->
+                    <fieldset>
+                        <legend>Izaberite Usluge Koje Vam Trebaju</legend>
+                        <div class="input-group">
+                            <input type="checkbox" id="design" name="services[]" value="Web Dizajn">
+                            <label for="design">Web Dizajn</label>
                         </div>
+                        <div class="input-group">
+                            <input type="checkbox" id="maintenance" name="services[]" value="Održavanje Web Sajta">
+                            <label for="maintenance">Održavanje Web Sajta</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" id="hosting" name="services[]" value="Web Hosting">
+                            <label for="hosting">Web Hosting</label>
+                        </div>
+                    </fieldset>
 
-                        <div>
-                            <label for="vreme">Izaberite vreme naših usluga</label>
-                                <select id="vreme" name="vreme">
-                                    <option value="1mesec">1 mesec</option>
-                                    <option value="3meseca">3 meseca</option>
-                                    <option value="6meseci">6 meseci</option>
-                                    <option value="1godina">1 godina</option>
-                                    <option value="godina">1+ godina</option>
-                                </select>
+                    <!-- Detalji Projekta -->
+                    <fieldset>
+                        <legend>Detalji Projekta</legend>
+                        <div class="input-group">
+                            <label for="project-description">Opis Vašeg Projekta</label>
+                            <textarea id="project-description" name="project-description" placeholder="Opišite detaljno vaš projekat" required></textarea>
                         </div>
+                        <div class="input-group">
+                            <label for="project-duration">Preferirani Rok</label>
+                            <select id="project-duration" name="project-duration" required>
+                                <option value="1mesec">1 Mesec</option>
+                                <option value="3meseca">3 Meseca</option>
+                                <option value="6meseci">6 Meseci</option>
+                                <option value="1godina">1 Godina</option>
+                                <option value="custom">Prilagođeni Rok</option>
+                            </select>
+                        </div>
+                    </fieldset>
 
-                        <div>
-                            <label >Način plaćanja</label>
-                            <form>
-                                <input type="radio" id="Kartica"  value="Kartica">
-                                <label for="html">Kartica</label><br>
-                                <input type="radio" id="Kripto"  value="Kripto">
-                                <label for="css">Kripto</label><br>
-                                <input type="radio" id="PayPal"  value="PayPal">
-                                <label for="css">PayPal</label><br>
-                              </form>
+                    <!-- Način Plačanja -->
+                    <fieldset>
+                        <legend>Način Plačanja</legend>
+                        <div class="input-group">
+                            <input type="radio" id="card" name="payment-method" value="Kartica" required>
+                            <label for="card">Kreditna/Debitna Kartica</label>
                         </div>
-                        <button class="button_1" type="submit">Pošalji</button>
-                    </form>
-                </div>
-            </aside>
+                        <div class="input-group">
+                            <input type="radio" id="crypto" name="payment-method" value="Kripto" required>
+                            <label for="crypto">Kriptovalute</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" id="paypal" name="payment-method" value="PayPal" required>
+                            <label for="paypal">PayPal</label>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <!-- Dugme za Slanje -->
+                    <div class="form-action">
+                        <button class="button_1" type="submit" class="submit-button">Pošaljite Zahtev za Ponudu</button>
+                    </div>
+                </form>
+            </div>
+        </aside>
            
         </div>
     </section>
