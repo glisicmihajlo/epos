@@ -10,6 +10,16 @@ body{
     margin: auto;
     overflow: hidden;
 }
+.slike{
+    display: flex;
+    size-adjust: 10%;
+}
+.matej{
+    max-width: 30%;
+}
+.mihajlo{
+    max-width: 30%;
+}
 
 ul{
     margin: 0;
@@ -83,6 +93,13 @@ header a:hover{
 #showcase{
     min-height: 400px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/Z.jpg') no-repeat 0;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+#showcaseINDEX{
+    min-height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/aaa.jpg') no-repeat 0;
     background-size: cover;
     text-align: center;
     color: #ffffff;
