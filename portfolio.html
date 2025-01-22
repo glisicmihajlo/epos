@@ -6,12 +6,21 @@
     <title>MM Web Design | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="ress/css/style.css">
     <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         #portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
         }
+
         .project {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
             background: #f4f4f4;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -19,20 +28,18 @@
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+
         .project img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin: 0 auto;
-    }
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
         .project h3 {
             margin: 10px 0;
             color: #333;
         }
+
         .project p {
             padding: 0 10px 15px;
             color: #666;
@@ -63,33 +70,31 @@
         </div>
     </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="project">
-                <img src="ress/img/project1.avif" alt="E-commerce Platform">
-                <h3>E-commerce Platform</h3>
-                <p>Kreirali smo prilagođenu e-commerce platformu za lokalnu prodavnicu, omogućavajući jednostavnu kupovinu i integraciju sa popularnim sistemima plaćanja. Korišćene tehnologije: HTML, CSS, JavaScript, PHP.</p>
-            </div>
-            <div class="project">
-                <img src="ress/img/project2.avif" alt="Portfolio Website">
-                <h3>Portfolio Website</h3>
-                <p>Razvili smo elegantan i moderan portfolio sa interaktivnim elementima za slobodnog umetnika, fokusirajući se na vizuelnu privlačnost. Korišćene tehnologije: React, Sass.</p>
-            </div>
-            <div class="project">
-                <img src="ress/img/project3.avif" alt="Corporate Website">
-                <h3>Corporate Website</h3>
-                <p>Napravili smo korporativni veb sajt za IT kompaniju, uključujući sekcije za usluge, tim i kontakt formu. Optimizovan za SEO. Korišćene tehnologije: WordPress, Elementor.</p>
-            </div>
-            <div class="project">
-                <img src="ress/img/project4.avif" alt="E-commerce Platform">
-                <h3>E-commerce Platform</h3>
-                <p>Kreirali smo prilagođenu e-commerce platformu za lokalnu prodavnicu, omogućavajući jednostavnu kupovinu i integraciju sa popularnim sistemima plaćanja. Korišćene tehnologije: HTML, CSS, JavaScript, PHP.</p>
-            </div>
-            <div class="project">
-                <img src="ress/img/project5.avif" alt="Portfolio Website">
-                <h3>Portfolio Website</h3>
-                <p>Razvili smo elegantan i moderan portfolio sa interaktivnim elementima za slobodnog umetnika, fokusirajući se na vizuelnu privlačnost. Korišćene tehnologije: React, Sass.</p>
-            </div>
+    <section id="portfolio" class="container">
+        <div class="project">
+            <img src="ress/img/project1.avif" alt="E-commerce Platform">
+            <h3>E-commerce Platform</h3>
+            <p>Kreirali smo prilagođenu e-commerce platformu za lokalnu prodavnicu, omogućavajući jednostavnu kupovinu i integraciju sa popularnim sistemima plaćanja.</p>
+        </div>
+        <div class="project">
+            <img src="ress/img/project2.avif" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>Razvili smo elegantan i moderan portfolio sa interaktivnim elementima za slobodnog umetnika.</p>
+        </div>
+        <div class="project">
+            <img src="ress/img/project3.avif" alt="Corporate Website">
+            <h3>Corporate Website</h3>
+            <p>Napravili smo korporativni veb sajt za IT kompaniju, uključujući sekcije za usluge, tim i kontakt formu.</p>
+        </div>
+        <div class="project">
+            <img src="ress/img/project4.avif" alt="Blog Website">
+            <h3>Blog Website</h3>
+            <p>Izradili smo personalizovani blog sa dinamičkim funkcionalnostima i SEO optimizacijom.</p>
+        </div>
+        <div class="project">
+            <img src="ress/img/project5.avif" alt="Event Management Platform">
+            <h3>Event Management Platform</h3>
+            <p>Kreirali smo platformu za upravljanje događajima sa opcijama registracije i pregleda događaja.</p>
         </div>
     </section>
 
