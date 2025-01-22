@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Web Design | Services</title>
+    <title>MM Design | Servisi </title>
     <link rel="stylesheet" type="text/css" href="ress/css/style.css">
 </head>
 <body>
     <header>  
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">Emily</span>WebDesign</h1>
+                <h1><span class="highlight">MM</span>WebDesign</h1>
             </div>
             <nav>
                 <ul>
@@ -25,10 +25,10 @@
 
     <section id="newsletter">
         <div class="container">
-            <h1>Subscribe To Our Newsletter</h1>
+            <h1>Prijavite se na naše novosti</h1>
             <form>
-                <input type="email" placeholder="Enter Email...">
-                <button type="submit" class="button_1">Subscribe</button>
+                <input type="email" placeholder="Unesite Email...">
+                <button type="submit" class="button_1">Prijavi se</button>
             </form>
         </div>
     </section>
@@ -40,10 +40,7 @@
                     <Ul id="services">
                         <li>
                             <h3>Web Site Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Libero dolore voluptatem dolorum, repellendus ipsam provident 
-                                praesentium eligendi dolorem in adipisci corporis modi, perspiciatis 
-                                consectetur eum alias amet qui corrupti? Esse.</p>
+                            <p>Lorem ipsum </p>
                             <p>Pricing: $1,000 - $3,000</p>
                         </li>
                         <li>
@@ -67,21 +64,56 @@
 
             <aside id="sidebar">
                 <div class="dark">
-                <h3>Get A Qoute</h3>
+                <h3>Podaci za potrebni za naše usluge</h3>
                     <form class="quote">
                         <div>
-                            <label>Name</label><br>
-                            <input type="text" placeholder="Name">
+                            <label>Ime</label><br>
+                            <input type="text" placeholder="Ime">
                         </div>
                         <div>
                             <label>Email</label><br>
-                            <input type="text" placeholder="Email Address">
+                            <input type="text" placeholder="Email Adresa">
                         </div>
                         <div>
-                            <label>Message</label><br>
-                          <textarea placeholder="Message"></textarea>
+                            <label>Vaš zahtev</label><br>
+                          <textarea placeholder="Unesite detaljan opis zahteva"></textarea>
                         </div>
-                        <button class="button_1" type="submit">Send</button>
+
+                        <div>
+                            <label>Koje usluge želite</label>
+                            <form>
+                                <input type="checkbox" id="cb1" value="Bike">
+                                <label for="cb1">Web Site Design</label><br>
+                                <input type="checkbox" id="cb2"  value="Car">
+                                <label for="cb2"> Web Site Maintenace</label><br>
+                                <input type="checkbox" id="cb3" value="Boat">
+                                <label for="cb3"> Web Site Hosting</label>
+                              </form>
+                        </div>
+
+                        <div>
+                            <label for="vreme">Izaberite vreme naših usluga</label>
+                                <select id="vreme" name="vreme">
+                                    <option value="1mesec">1 mesec</option>
+                                    <option value="3meseca">3 meseca</option>
+                                    <option value="6meseci">6 meseci</option>
+                                    <option value="1godina">1 godina</option>
+                                    <option value="godina">1+ godina</option>
+                                </select>
+                        </div>
+
+                        <div>
+                            <label >Način plaćanja</label>
+                            <form>
+                                <input type="radio" id="Kartica"  value="Kartica">
+                                <label for="html">Kartica</label><br>
+                                <input type="radio" id="Kripto"  value="Kripto">
+                                <label for="css">Kripto</label><br>
+                                <input type="radio" id="PayPal"  value="PayPal">
+                                <label for="css">PayPal</label><br>
+                              </form>
+                        </div>
+                        <button class="button_1" type="submit">Pošalji</button>
                     </form>
                 </div>
             </aside>
