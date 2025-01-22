@@ -82,7 +82,7 @@ header a:hover{
 /*showCase*/
 #showcase{
     min-height: 400px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/Z.jpg') no-repeat 0 -300px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/Z.jpg') no-repeat 0;
     background-size: cover;
     text-align: center;
     color: #ffffff;
@@ -122,19 +122,26 @@ header a:hover{
 /*boxes*/
 #boxes{
     margin-top: 20px;
-
 }
 
-#boxes .box{
-    float: left;
+#boxes .box {
+    flex: 1;
     text-align: center;
-    width: 30%;
-    padding: 10px;
 }
 
 #boxes .box img{
     width: 120px;
    
+}
+
+#boxes .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Razmak između kutija */
+}
+
+#boxes .box:last-child {
+    margin-right: 0;
 }
 
 aside#sidebar{
@@ -169,6 +176,31 @@ footer{
     padding: 20px;
 }
 
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project {
+    flex: 1 1 calc(33% - 20px); /* Svaki projekat zauzima 50% širine minus gap razmak */
+    margin-bottom: 20px; /* Razmak između projekata */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 14px;
+}
+
 /*media queris*/
 @media(max-width:768px){
     header#brading,
@@ -200,5 +232,27 @@ footer{
     #newsletter form input[type="email"], .quote button, .quote textarea  {
         width: 100%;
         margin-bottom: 5px;
+    }
+
+    #boxes .container {
+        flex-direction: column; /* Postavljanje kutija u vertikalni raspored */
+        align-items: center; /* Centriranje kutija */
+        gap: 10px; /* Manji razmak između kutija */
+    }
+
+    #boxes .box {
+        width: 100%; /* Svaka kutija zauzima 100% širine */
+        margin-right: 0; /* Uklanjanje margine sa desne strane */
+    }
+
+    #portfolio {
+        flex-direction: column; /* Postavljanje projekata u vertikalni raspored */
+        align-items: center; /* Centriranje projekata */
+        gap: 10px; /* Manji razmak između projekata */
+    }
+
+    .project {
+        width: 100%; /* Svaki projekat zauzima 100% širine */
+        max-width: none; /* Uklanjanje maksimalne širine */
     }
 }
