@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Web Design | Dobro Došli</title>
-    <link rel="stylesheet" type="text/css" href="ress/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MM Web Design | Početna</title>
+    <link rel="stylesheet" href="ress/css/style.css" />
 </head>
+
 <body>
-    <header>  
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">MM</span>Web Design</h1>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1><span class="highlight">MM</span> Web Design</h1>
             </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Početna</a></li>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Početna</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="services.html">Servisi</a></li>
                     <li><a href="about.html">O Nama</a></li>
@@ -23,74 +25,65 @@
         </div>
     </header>
 
-    <section id="showcaseINDEX">
+    <section id="showcase" class="showcase-index">
         <div class="container">
             <h1>Pristupačni web dizajneri sa dugogodišnjim iskustvom</h1>
-            <p>Lorem ipsum  </p>
-            <div class="slike">
-                <div class="matej"><img src="ress/img/matej.jpg" alt="">
+            <p>Mi kreiramo moderne, brze i responzivne sajtove koji odražavaju vašu jedinstvenu viziju i brend.</p>
+            <div class="profiles">
+                <article class="profile">
+                    <img src="ress/img/matej.jpg" alt="Matej Vuković" />
                     <h2>Matej Vuković</h2>
                     <p>
-                        <b>Programski jezici i tehnologije:</b> HTML5, CSS3, JavaScript (ES6+).<br>
-                        <b>Frameworkovi i biblioteke:</b> React, Vue.js, Angular, Next.js.<br>
-                        <b>CSS alati:</b> SASS, LESS, TailwindCSS, Bootstrap.<br>
-                        <b>Razvoj alata i verzionisanje:</b> Webpack, Vite, Git.<br>
-                        <b>Responzivni dizajn:</b> Kreiranje mobilno-prilagođenih interfejsa i optimizacija za različite uređaje i pretraživače (cross-browser compatibility).<br>
-                        <b>Performanse i optimizacija:</b> Implementacija lazy loading-a, minimizacija koda, SEO optimizacija i ubrzanje učitavanja stranica.<br>
-                        <b>Rad sa API-jima:</b> Integracija RESTful i GraphQL API-ja.<br>
-                        <b>Testiranje:</b> Unit i end-to-end testiranje pomoću alata kao što su Jest, Cypress i Testing Library.<br>
-                        <b>Timski rad i metodologije:</b> Rad u Agile/Scrum timovima uz korišćenje alata poput Jira, Trello i GitHub Projects.<br>
+                        <strong>Tehnologije:</strong> HTML5, CSS3, JavaScript (ES6+), React, Vue.js, Angular.<br />
+                        <strong>Alati:</strong> SASS, LESS, TailwindCSS, Webpack, Git.<br />
+                        <strong>Metodologije:</strong> Agile, Scrum, SEO, optimizacija i responzivni dizajn.
                     </p>
-                </div>
-                <div class="mihajlo"><img src="ress/img/mihajlo.jpg">
+                </article>
+
+                <article class="profile">
+                    <img src="ress/img/mihajlo.jpg" alt="Mihajlo Glišić" />
                     <h2>Mihajlo Glišić</h2>
                     <p>
-                       <b>Programski jezici:</b>JavaScript (Node.js), Python (Django, Flask), PHP (Laravel), Java (Spring Boot), Ruby (Rails). <br>
-                       <b>Baze podataka:</b>  MySQL, PostgreSQL, MongoDB, Redis. <br>
-                       <b>API razvoj:</b> Dizajniranje i implementacija RESTful i GraphQL API-ja, uključujući autentifikaciju i autorizaciju (JWT, OAuth).<br>
-                        <b>Cloud infrastruktura:</b> AWS (Lambda, S3, EC2), Google Cloud, Azure.<br>
-                        <b>DevOps i CI/CD: </b>Iskustvo sa Docker, Kubernetes, Jenkins, GitLab CI/CD i Terraform.<br>
-                        <b>Sigurnost:</b> Implementacija sigurnosnih praksi, zaštita od SQL injection, XSS, CSRF, enkripcija podataka i sigurnosni certifikati (SSL/TLS).<br>
-                        <b>Performanse:</b> Optimizacija baza podataka, keširanje sa Redis/Memcached i horizontalno/vertikalno skaliranje sistema.<br>
-                        <b>Rad sa event-driven arhitekturama: </b>RabbitMQ, Apache Kafka.<br>
-                        <b>Alati za monitoring:</b> Prometheus, Grafana, New Relic, ELK Stack (Elasticsearch, Logstash, Kibana).<br>
+                        <strong>Backend:</strong> Node.js, Python, PHP, Java, Ruby.<br />
+                        <strong>Baze podataka:</strong> MySQL, PostgreSQL, MongoDB.<br />
+                        <strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, CI/CD, sigurnost i monitoring.
                     </p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <section id="newsletter">
-        <div class="container">
-            <h1>Prijavite se na naše novosti</h1>
+        <div class="container newsletter-container">
+            <h2>Prijavite se na naše novosti</h2>
             <form>
-                <input type="email" placeholder="Unesite Email">
-                <button type="submit" class="button_1">Prijavi se</button>
+                <input type="email" placeholder="Unesite Email" required />
+                <button type="submit" class="btn">Prijavi se</button>
             </form>
         </div>
     </section>
 
-    <section id="boxes">
-        <div class="container">
-            <div class="box">
-                <img src="ress/img/h.png">
-                <h3>HTML5 Markup jezik</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere? Voluptas, velit sapiente necessitatibus quis dolor similique consequuntur nam ad, odit temporibus </p>
-            </div>
-            <div class="box">
-                <img src="ress/img/c.png">
-                <h3>CSS3 stilizovanje</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere? Voluptas, velit sapiente necessitatibus quis dolor similique consequuntur nam ad, odit temporibus </p>
-            </div>
-            <div class="box">
-                <img src="ress/img/g.jpg">
-                <h3>Grafički dizajneri</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere? Voluptas, velit sapiente necessitatibus quis dolor similique consequuntur nam ad, odit temporibus </p>
-            </div>
+    <section id="features" class="container">
+        <div class="feature-box">
+            <img src="ress/img/h.png" alt="HTML5" />
+            <h3>HTML5 Markup jezik</h3>
+            <p>Standardni jezik za kreiranje web stranica sa podrškom za najnovije funkcionalnosti i medijske sadržaje.</p>
+        </div>
+        <div class="feature-box">
+            <img src="ress/img/c.png" alt="CSS3" />
+            <h3>CSS3 stilizovanje</h3>
+            <p>Napredni stilovi i animacije za vizuelno atraktivne i responzivne dizajne.</p>
+        </div>
+        <div class="feature-box">
+            <img src="ress/img/g.jpg" alt="Grafika" />
+            <h3>Grafički dizajn</h3>
+            <p>Kreativni dizajn vizuelnih elemenata za prepoznatljiv i profesionalan izgled sajta.</p>
         </div>
     </section>
-    <footer>
-        <p>MM Web Design, Copyright @Copy-2025</p>
+
+    <footer class="site-footer">
+        <p>MM Web Design © 2025</p>
     </footer>
 </body>
+
 </html>

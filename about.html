@@ -1,81 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Design | O Nama</title>
-    <link rel="stylesheet" type="text/css" href="ress/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MM Web Design | O Nama</title>
+    <link rel="stylesheet" href="ress/css/style.css" />
 </head>
+
 <body>
-    <header>  
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">MM</span>Web Design</h1>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1><span class="highlight">MM</span> Web Design</h1>
             </div>
-            <nav>
-                <ul>
+            <nav class="main-nav">
+                <ul class="nav-list">
                     <li><a href="index.html">Početna</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="services.html">Servisi</a></li>
-                    <li class="current"><a href="about.html">O Nama</a></li>
+                    <li><a href="about.html" class="active">O Nama</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="newsletter">
-        <div class="container">
-            <h1>Prijavite se na naše novosti</h1>
+    <section id="newsletter" class="newsletter-section">
+        <div class="container newsletter-container">
+            <h2>Prijavite se na naše novosti</h2>
             <form>
-                <input type="email" placeholder="Enter Email...">
-                <button type="submit" class="button_1">Prijavite se</button>
+                <input type="email" placeholder="Unesite Email" required />
+                <button type="submit" class="btn">Prijavite se</button>
             </form>
         </div>
     </section>
 
-    <div class="main">
-  <div class="profile">
-    <img src="https://via.placeholder.com/400x250.png?text=Mihajlo+Glišić" alt="Mihajlo Glišić">
-    <h2>Mihajlo Glišić</h2>
-    <p>20 godina, web dizajner sa višegodišnjim iskustvom u izradi i optimizaciji modernih web sajtova.</p>
-    <h4>Veštine:</h4>
-    <ul>
-      <li>HTML5 / CSS3 / SASS</li>
-      <li>JavaScript / React</li>
-      <li>UI/UX dizajn</li>
-      <li>WordPress razvoj</li>
-      <li>SEO optimizacija</li>
-      <li>Adobe XD / Figma</li>
-    </ul>
-  </div>
+    <main class="container about-main">
+        <div class="profiles">
+            <article class="profile">
+                <img src="https://via.placeholder.com/400x250.png?text=Mihajlo+Glišić" alt="Mihajlo Glišić" />
+                <h2>Mihajlo Glišić</h2>
+                <p>20 godina, web dizajner sa višegodišnjim iskustvom u izradi i optimizaciji modernih web sajtova.</p>
+                <h4>Veštine:</h4>
+                <ul>
+                    <li>HTML5 / CSS3 / SASS</li>
+                    <li>JavaScript / React</li>
+                    <li>UI/UX dizajn</li>
+                    <li>WordPress razvoj</li>
+                    <li>SEO optimizacija</li>
+                    <li>Adobe XD / Figma</li>
+                </ul>
+            </article>
 
-  <div class="profile">
-    <img src="https://via.placeholder.com/400x250.png?text=Matej+Vuković" alt="Matej Vuković">
-    <h2>Matej Vuković</h2>
-    <p>Strastveni dizajner i front-end developer, posvećen kreiranju funkcionalnih i vizuelno privlačnih rešenja.</p>
-    <h4>Veštine:</h4>
-    <ul>
-      <li>Front-end razvoj (HTML, CSS, JS)</li>
-      <li>Bootstrap / Tailwind CSS</li>
-      <li>Canva / Photoshop dizajn</li>
-      <li>Animacije i efekti (GSAP, Framer Motion)</li>
-      <li>Mobilna responzivnost</li>
-      <li>Git / GitHub kolaboracija</li>
-    </ul>
-  </div>
-</div>
+            <article class="profile">
+                <img src="https://via.placeholder.com/400x250.png?text=Matej+Vuković" alt="Matej Vuković" />
+                <h2>Matej Vuković</h2>
+                <p>Strastveni dizajner i front-end developer, posvećen kreiranju funkcionalnih i vizuelno privlačnih rešenja.</p>
+                <h4>Veštine:</h4>
+                <ul>
+                    <li>Front-end razvoj (HTML, CSS, JS)</li>
+                    <li>Bootstrap / Tailwind CSS</li>
+                    <li>Canva / Photoshop dizajn</li>
+                    <li>Animacije i efekti (GSAP, Framer Motion)</li>
+                    <li>Mobilna responzivnost</li>
+                    <li>Git / GitHub kolaboracija</li>
+                </ul>
+            </article>
+        </div>
 
-<div class="contact">
-  <h3>Kontaktirajte nas</h3>
-  <p>📞 Telefon: +381 63 123 4567</p>
-  <p>📧 Email: info@mmwebdesign.rs</p>
-  <p>🌐 Web: www.mmwebdesign.rs</p>
-  <p>📱 Instagram: @mmwebdesign</p>
-  <p>💼 LinkedIn: MM Web Design Team</p>
-</div>
+        <section class="contact-section">
+            <h3>Kontaktirajte nas</h3>
+            <p>📞 Telefon: +381 63 123 4567</p>
+            <p>📧 Email: info@mmwebdesign.rs</p>
+            <p>🌐 Web: www.mmwebdesign.rs</p>
+            <p>📱 Instagram: @mmwebdesign</p>
+            <p>💼 LinkedIn: MM Web Design Team</p>
+        </section>
+    </main>
 
-    <footer>
-        <p>MM Design, Copyright @Copy; 2025</p>
+    <footer class="site-footer">
+        <p>MM Web Design © 2025</p>
     </footer>
 </body>
+
 </html>
