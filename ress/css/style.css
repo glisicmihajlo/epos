@@ -150,6 +150,74 @@ header a:hover{
     height: 25px;
     width: 250px;
 }
+/*servisi*/
+#services {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#services li {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#services li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#services h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    border-left: 4px solid #3b82f6;
+    padding-left: 12px;
+}
+
+#services p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#services p:last-child {
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+
+/*Sidemenu*/
+#Sidemenu ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e8491d;
+}
+#Sidemenu ul li{
+    list-style: none;
+}
+#Sidemenu ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #3b82f6;
+    position: relative;
+    padding: 25px 0px 25px 25px;
+}
 
 /*boxes*/
 #boxes{
@@ -311,3 +379,5 @@ footer{
         max-width: none; /* Uklanjanje maksimalne širine */
     }
 }
+
+
