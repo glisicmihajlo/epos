@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alati | E-Biznis Akademija</title>
+    <meta name="description" content="Najbolji alati za SEO, email marketing i e-commerce." />
+    <meta name="keywords" content="SEO alati, email marketing alati, e-commerce alati" />
+    <meta name="author" content="E-Biznis Akademija" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">E-Biznis Akademija</div>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Početna</a>
+            <a href="about.html">O nama</a>
+            <a href="tools.html" class="active">Alati</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <button class="burger" aria-label="Meni" aria-expanded="false" aria-controls="mainNav" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    </header>
+
+    <div class="tools-page">
+        <aside class="sidemenu" id="sideMenu">
+            <nav>
+                <ul>
+                    <li><a href="#seo" class="active" onclick="showSection(event)">SEO alati</a></li>
+                    <li><a href="#email" onclick="showSection(event)">Email marketing</a></li>
+                    <li><a href="#ecommerce" onclick="showSection(event)">E-commerce alati</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="tools-content">
+            <section id="seo" class="tool-section active">
+                <h1>SEO alati</h1>
+                <p>SEO alati su ključni za analizu i optimizaciju vidljivosti sajta na pretraživačima.</p>
+                <ul>
+                    <li><strong>Google Search Console</strong> – besplatan alat za praćenje performansi sajta.</li>
+                    <li><strong>Ahrefs</strong> – moćan alat za analizu backlinkova i konkurencije.</li>
+                    <li><strong>Moz</strong> – alat za SEO analitiku i rangiranje ključnih reči.</li>
+                </ul>
+            </section>
+
+            <section id="email" class="tool-section">
+                <h1>Email marketing alati</h1>
+                <p>Email marketing je jedan od najefikasnijih kanala za direktnu komunikaciju sa klijentima.</p>
+                <ul>
+                    <li><strong>Mailchimp</strong> – popularan servis za kreiranje i slanje email kampanja.</li>
+                    <li><strong>GetResponse</strong> – alat sa naprednim funkcijama automatizacije.</li>
+                    <li><strong>Sendinblue</strong> – sveobuhvatni alat za email i SMS marketing.</li>
+                </ul>
+            </section>
+
+            <section id="ecommerce" class="tool-section">
+                <h1>E-commerce alati</h1>
+                <p>Ovi alati pomažu u postavljanju i upravljanju online prodavnicama.</p>
+                <ul>
+                    <li><strong>Shopify</strong> – platforma za kreiranje online prodavnica sa mnoštvom dodataka.</li>
+                    <li><strong>WooCommerce</strong> – WordPress plugin za e-commerce funkcionalnosti.</li>
+                    <li><strong>Magento</strong> – moćno rešenje za srednje i velike prodavnice.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>E-Biznis Akademija</h3>
+                <p>Najbolji izbor za vašu edukaciju iz elektronskog poslovanja.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Početna</a>
+                <a href="about.html">O nama</a>
+                <a href="tools.html">Alati</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" /></a>
+                <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" /></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 E-Biznis Akademija. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            const burger = document.querySelector('.burger');
+            nav.classList.toggle('open');
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', !expanded);
+        }
+
+        // Funkcija za prikaz sekcija na klik u sidemenu
+        function showSection(event) {
+            event.preventDefault();
+
+            // Ukloni klasu active sa svih linkova
+            document.querySelectorAll('.sidemenu a').forEach(a => a.classList.remove('active'));
+            // Dodaj active kliknutom linku
+            event.target.classList.add('active');
+
+            // Sakrij sve sekcije
+            document.querySelectorAll('.tool-section').forEach(sec => sec.classList.remove('active'));
+            // Prikaži odabranu sekciju
+            const id = event.target.getAttribute('href').substring(1);
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

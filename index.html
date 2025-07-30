@@ -4,86 +4,112 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MM Web Design | Početna</title>
-    <link rel="stylesheet" href="ress/css/style.css" />
+    <title>E-Biznis Akademija | Početna</title>
+    <meta name="description" content="Platforma za edukaciju iz elektronskog poslovanja, SEO, marketinga i e-commerce." />
+    <meta name="keywords" content="elektronsko poslovanje, e-biznis, SEO, marketing, online kursevi" />
+    <meta name="author" content="E-Biznis Akademija" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-container">
-            <div class="logo">
-                <h1><span class="highlight">MM</span> Web Design</h1>
-            </div>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="active">Početna</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="services.html">Servisi</a></li>
-                    <li><a href="about.html">O Nama</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <div class="logo">E-Biznis Akademija</div>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html" class="active">Početna</a>
+            <a href="about.html">O nama</a>
+            <a href="tools.html">Alati</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <button class="burger" aria-label="Meni" aria-expanded="false" aria-controls="mainNav" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
     </header>
 
-    <section id="showcase" class="showcase-index">
-        <div class="container">
-            <h1>Pristupačni web dizajneri sa dugogodišnjim iskustvom</h1>
-            <p>Mi kreiramo moderne, brze i responzivne sajtove koji odražavaju vašu jedinstvenu viziju i brend.</p>
-            <div class="profiles">
-                <article class="profile">
-                    <img src="ress/img/matej.jpg" alt="Matej Vuković" />
-                    <h2>Matej Vuković</h2>
-                    <p>
-                        <strong>Tehnologije:</strong> HTML5, CSS3, JavaScript (ES6+), React, Vue.js, Angular.<br />
-                        <strong>Alati:</strong> SASS, LESS, TailwindCSS, Webpack, Git.<br />
-                        <strong>Metodologije:</strong> Agile, Scrum, SEO, optimizacija i responzivni dizajn.
-                    </p>
-                </article>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Dobrodošli u svet elektronskog poslovanja</h1>
+            <p>Razvijajte svoj biznis sa našim kursevima, alatima i savetima.</p>
+            <a href="about.html" class="btn-primary">Saznaj više</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-business.jpg" alt="Ilustracija elektronskog poslovanja" />
+        </div>
+    </section>
 
-                <article class="profile">
-                    <img src="ress/img/mihajlo.jpg" alt="Mihajlo Glišić" />
-                    <h2>Mihajlo Glišić</h2>
-                    <p>
-                        <strong>Backend:</strong> Node.js, Python, PHP, Java, Ruby.<br />
-                        <strong>Baze podataka:</strong> MySQL, PostgreSQL, MongoDB.<br />
-                        <strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, CI/CD, sigurnost i monitoring.
-                    </p>
-                </article>
+    <section class="courses">
+        <h2>Popularni kursevi</h2>
+        <div class="courses-grid">
+            <article class="course-card">
+                <img src="images/seo-course.jpg" alt="SEO kurs" />
+                <h3>SEO Optimizacija</h3>
+                <p>Naučite kako da povećate vidljivost svog sajta na pretraživačima.</p>
+            </article>
+            <article class="course-card">
+                <img src="images/email-marketing.jpg" alt="Email marketing" />
+                <h3>Email marketing</h3>
+                <p>Izgradite uspešne email kampanje koje prodaju i zadržavaju kupce.</p>
+            </article>
+            <article class="course-card">
+                <img src="images/ecommerce.jpg" alt="E-commerce" />
+                <h3>E-commerce strategije</h3>
+                <p>Saznajte kako da pokrenete i uspešno vodite online prodavnicu.</p>
+            </article>
+            <article class="course-card">
+                <img src="images/social-media.jpg" alt="Društvene mreže" />
+                <h3>Marketing na društvenim mrežama</h3>
+                <p>Iskoristite moć društvenih mreža za promociju i rast poslovanja.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Šta naši polaznici kažu</h2>
+        <div class="testimonial-cards">
+            <blockquote>
+                <p>Ovaj kurs mi je pomogao da razumem SEO i značajno povećam saobraćaj na sajtu.</p>
+                <footer>- Jelena M.</footer>
+            </blockquote>
+            <blockquote>
+                <p>Alati i saveti su bili veoma korisni za razvoj moje online prodavnice.</p>
+                <footer>- Marko D.</footer>
+            </blockquote>
+            <blockquote>
+                <p>Profesionalan pristup i praktične veštine koje odmah možete primeniti.</p>
+                <footer>- Ivana P.</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>E-Biznis Akademija</h3>
+                <p>Najbolji izbor za vašu edukaciju iz elektronskog poslovanja.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Početna</a>
+                <a href="about.html">O nama</a>
+                <a href="tools.html">Alati</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" /></a>
+                <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" /></a>
             </div>
         </div>
-    </section>
-
-    <section id="newsletter">
-        <div class="container newsletter-container">
-            <h2>Prijavite se na naše novosti</h2>
-            <form>
-                <input type="email" placeholder="Unesite Email" required />
-                <button type="submit" class="btn">Prijavi se</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="features" class="container">
-        <div class="feature-box">
-            <img src="ress/img/h.png" alt="HTML5" />
-            <h3>HTML5 Markup jezik</h3>
-            <p>Standardni jezik za kreiranje web stranica sa podrškom za najnovije funkcionalnosti i medijske sadržaje.</p>
-        </div>
-        <div class="feature-box">
-            <img src="ress/img/c.png" alt="CSS3" />
-            <h3>CSS3 stilizovanje</h3>
-            <p>Napredni stilovi i animacije za vizuelno atraktivne i responzivne dizajne.</p>
-        </div>
-        <div class="feature-box">
-            <img src="ress/img/g.jpg" alt="Grafika" />
-            <h3>Grafički dizajn</h3>
-            <p>Kreativni dizajn vizuelnih elemenata za prepoznatljiv i profesionalan izgled sajta.</p>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <p>MM Web Design © 2025</p>
+        <p class="copyright">&copy; 2025 E-Biznis Akademija. Sva prava zadržana.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            const burger = document.querySelector('.burger');
+            nav.classList.toggle('open');
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', !expanded);
+        }
+    </script>
 </body>
 
 </html>

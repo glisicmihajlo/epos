@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt | E-Biznis Akademija</title>
+    <meta name="description" content="Kontaktirajte nas putem kontakt forme ili newslettera." />
+    <meta name="keywords" content="kontakt, email, newsletter, pitanja" />
+    <meta name="author" content="E-Biznis Akademija" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">E-Biznis Akademija</div>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Početna</a>
+            <a href="about.html">O nama</a>
+            <a href="tools.html">Alati</a>
+            <a href="contact.html" class="active">Kontakt</a>
+        </nav>
+        <button class="burger" aria-label="Meni" aria-expanded="false" aria-controls="mainNav" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    </header>
+
+    <main class="contact-page">
+        <h1>Kontaktirajte nas</h1>
+        <form class="contact-form" action="#" method="POST" novalidate>
+            <label for="name">Ime i prezime:</label>
+            <input type="text" id="name" name="name" placeholder="Vaše ime" required />
+
+            <label for="email">Email adresa:</label>
+            <input type="email" id="email" name="email" placeholder="vaš@email.com" required />
+
+            <fieldset>
+                <legend>Pol:</legend>
+                <label><input type="radio" name="gender" value="muški" required /> Muški</label>
+                <label><input type="radio" name="gender" value="ženski" /> Ženski</label>
+                <label><input type="radio" name="gender" value="drugo" /> Drugo</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesovanja:</legend>
+                <label><input type="checkbox" name="interest" value="SEO" /> SEO</label>
+                <label><input type="checkbox" name="interest" value="Email marketing" /> Email marketing</label>
+                <label><input type="checkbox" name="interest" value="E-commerce" /> E-commerce</label>
+            </fieldset>
+
+            <label for="subject">Tema poruke:</label>
+            <select id="subject" name="subject" required>
+        <option value="" disabled selected>Izaberite temu</option>
+        <option value="pitanje">Pitanje</option>
+        <option value="sugestija">Sugestija</option>
+        <option value="zahteva_kurs">Zahtev za kurs</option>
+      </select>
+
+            <label for="message">Poruka:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Vaša poruka"></textarea>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>E-Biznis Akademija</h3>
+                <p>Najbolji izbor za vašu edukaciju iz elektronskog poslovanja.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Početna</a>
+                <a href="about.html">O nama</a>
+                <a href="tools.html">Alati</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" /></a>
+                <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" /></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 E-Biznis Akademija. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            const burger = document.querySelector('.burger');
+            nav.classList.toggle('open');
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', !expanded);
+        }
+    </script>
+</body>
+
+</html>

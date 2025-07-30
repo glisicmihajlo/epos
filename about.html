@@ -4,83 +4,121 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MM Web Design | O Nama</title>
-    <link rel="stylesheet" href="ress/css/style.css" />
+    <title>O nama | E-Biznis Akademija</title>
+    <meta name="description" content="Saznajte više o našem timu i misiji E-Biznis Akademije." />
+    <meta name="keywords" content="o nama, tim, misija, elektronsko poslovanje" />
+    <meta name="author" content="E-Biznis Akademija" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-container">
-            <div class="logo">
-                <h1><span class="highlight">MM</span> Web Design</h1>
-            </div>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="services.html">Servisi</a></li>
-                    <li><a href="about.html" class="active">O Nama</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <div class="logo">E-Biznis Akademija</div>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Početna</a>
+            <a href="about.html" class="active">O nama</a>
+            <a href="tools.html">Alati</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <button class="burger" aria-label="Meni" aria-expanded="false" aria-controls="mainNav" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
     </header>
 
-    <section id="newsletter" class="newsletter-section">
-        <div class="container newsletter-container">
-            <h2>Prijavite se na naše novosti</h2>
-            <form>
-                <input type="email" placeholder="Unesite Email" required />
-                <button type="submit" class="btn">Prijavite se</button>
-            </form>
-        </div>
-    </section>
+    <main class="about-page">
+        <section class="about-hero">
+            <h1>Ko smo mi?</h1>
+            <p>E-Biznis Akademija je digitalna agencija posvećena unapređenju poslovanja kroz moderne online tehnologije. Naš cilj je da pomognemo malim i srednjim firmama da iskoriste potencijal interneta.</p>
+        </section>
 
-    <main class="container about-main">
-        <div class="profiles">
-            <article class="profile">
-                <img src="https://via.placeholder.com/400x250.png?text=Mihajlo+Glišić" alt="Mihajlo Glišić" />
-                <h2>Mihajlo Glišić</h2>
-                <p>20 godina, web dizajner sa višegodišnjim iskustvom u izradi i optimizaciji modernih web sajtova.</p>
-                <h4>Veštine:</h4>
-                <ul>
-                    <li>HTML5 / CSS3 / SASS</li>
-                    <li>JavaScript / React</li>
-                    <li>UI/UX dizajn</li>
-                    <li>WordPress razvoj</li>
-                    <li>SEO optimizacija</li>
-                    <li>Adobe XD / Figma</li>
-                </ul>
-            </article>
+        <section class="mission-vision">
+            <h2>Misija & Vizija</h2>
+            <div class="grid-two">
+                <div class="box fade-in">
+                    <h3>Misija</h3>
+                    <p>Naša misija je da pružimo pristupačne i efikasne alate koji pomažu firmama da se digitalno transformišu i ostvare konkurentsku prednost.</p>
+                </div>
+                <div class="box fade-in delay">
+                    <h3>Vizija</h3>
+                    <p>Da postanemo vodeća regionalna platforma za elektronsko poslovanje i edukaciju u digitalnoj sferi.</p>
+                </div>
+            </div>
+        </section>
 
-            <article class="profile">
-                <img src="https://via.placeholder.com/400x250.png?text=Matej+Vuković" alt="Matej Vuković" />
-                <h2>Matej Vuković</h2>
-                <p>Strastveni dizajner i front-end developer, posvećen kreiranju funkcionalnih i vizuelno privlačnih rešenja.</p>
-                <h4>Veštine:</h4>
-                <ul>
-                    <li>Front-end razvoj (HTML, CSS, JS)</li>
-                    <li>Bootstrap / Tailwind CSS</li>
-                    <li>Canva / Photoshop dizajn</li>
-                    <li>Animacije i efekti (GSAP, Framer Motion)</li>
-                    <li>Mobilna responzivnost</li>
-                    <li>Git / GitHub kolaboracija</li>
-                </ul>
-            </article>
-        </div>
+        <section class="our-team">
+            <h2>Naš Tim</h2>
+            <div class="grid-two">
+                <div class="team-card scale-hover">
+                    <img src="images/matej.jpg" alt="Matej - SEO stručnjak">
+                    <h4>Matej Vuković</h4>
+                    <p>SEO strateg i copywriter.</p>
+                </div>
+                <div class="team-card scale-hover">
+                    <img src="images/mihajlo.jpg" alt="Mihajlo - Programer">
+                    <h4>Mihajlo Glišić</h4>
+                    <p>Frontend i backend developer.</p>
+                </div>
+            </div>
+        </section>
 
-        <section class="contact-section">
-            <h3>Kontaktirajte nas</h3>
-            <p>📞 Telefon: +381 63 123 4567</p>
-            <p>📧 Email: info@mmwebdesign.rs</p>
-            <p>🌐 Web: www.mmwebdesign.rs</p>
-            <p>📱 Instagram: @mmwebdesign</p>
-            <p>💼 LinkedIn: MM Web Design Team</p>
+        <section class="values-section">
+            <h2>Naše vrednosti</h2>
+            <p>
+                U radu se vodimo principima transparentnosti, tačnosti i praktične primenljivosti. Trudimo se da svaki tekst koji objavimo bude provereno tačan, lako razumljiv i odmah primenjiv u stvarnim situacijama. Cenimo povratne informacije korisnika jer verujemo
+                da samo zajedničkim radom možemo da unapredimo sadržaj koji pružamo.
+            </p>
+        </section>
+
+        <section class="history-section">
+            <h2>Kako je sve počelo?</h2>
+            <p>
+                Ideja za sajt Digitalni Alati nastala je tokom studija kada smo shvatili da studentima i početnicima u poslovanju nedostaje jedno mesto gde mogu jasno i praktično da nauče kako da koriste najvažnije digitalne alate – od alata za upravljanje projektima
+                do online prodaje. Iz te potrebe razvila se cela platforma koja danas pomaže stotinama korisnika da se snađu u svetu elektronskog poslovanja.
+            </p>
+        </section>
+
+        <section class="timeline">
+            <h2>Naš razvoj kroz godine</h2>
+            <ul class="timeline-list">
+                <li><strong>2020:</strong> Osnivanje firme</li>
+                <li><strong>2021:</strong> Prvi eBook kurs i 1000+ korisnika</li>
+                <li><strong>2022:</strong> Partnerstva sa edukativnim platformama</li>
+                <li><strong>2023:</strong> Otvaranje eBizNet alata</li>
+                <li><strong>2024:</strong> Više od 10.000 zadovoljnih korisnika</li>
+            </ul>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <p>MM Web Design © 2025</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>E-Biznis Akademija</h3>
+                <p>Najbolji izbor za vašu edukaciju iz elektronskog poslovanja.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Početna</a>
+                <a href="about.html">O nama</a>
+                <a href="tools.html">Alati</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" /></a>
+                <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" /></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 E-Biznis Akademija. Sva prava zadržana.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            const burger = document.querySelector('.burger');
+            nav.classList.toggle('open');
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', !expanded);
+        }
+    </script>
 </body>
 
 </html>
